@@ -342,7 +342,7 @@ body{
     height: unset;
     padding: 30px 25px;
   }
-  .card{
+  .plans-body .card{
    margin-bottom: 20px; 
   }
   .x-flex{

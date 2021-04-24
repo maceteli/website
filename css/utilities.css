@@ -391,8 +391,11 @@ body{
 }
 
 @media(max-width: 500px){
+  .login{
+    display: none;
+  }
   .hero h2{
-    font-size: 35px;
+    font-size: 25px;
     color: var(--white);
     
   }

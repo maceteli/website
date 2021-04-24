@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="cover">
+    <!--navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <div class="top-nav">
+                <!--topnav-->
+                <div class="logo">
+                    <!--display logo-->
+                    Logo
+                </div>
+                <div class="menu">
+                    <!--user display-->
+                    <div class="user">
+                        <div class="user_profile">
+                            <div class="user_name"> John Doe</div>
+                            <div class="user_balance"> Balance: $0.00</div>
+                        </div>
+                        <div class="user_alpha">
+                            <i class='bx bx-user-circle' style='color:#ffffff; font-size:25px'  ></i>
+                        </div>
+                    </div>
+                    <span>
+                        <!--menu logo-->
+                    </span>
+                </div>
+
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="invest.html" id="myBtn" >Invest</a>
+                    </li>
+                    <li>
+                        <a href="#">Withdraw</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Bank Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Main-->
+    <div class="main">
+        <div class="card" id="user_card">
+            <div class="card-header">
+                <div class="card-salution">
+                    Hello, <span class="card-username"> John Doe</span>
+                </div>
+                <div class="card-btn"> 
+                    <div class="btn"> <a href="#">Withdraw</a> </div>
+                    <div class="btn"> <a href="#dailyTask">Daily Task</a> </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="mini-card">
+                    <div class="mini-card-icon">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                    </div>
+                    <div class="mini-card-details">
+                        <div class="mini-card-details-title">
+                            Balance
+                        </div>
+                        <div class="mini-card-details-amount">
+                            $0.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-card-icon">
+                        <i class='bx bxs-coin-stack' ></i>
+                    </div>
+                    <div class="mini-card-details">
+                        <div class="mini-card-details-title">
+                            Today's Gain
+                        </div>
+                        <div class="mini-card-details-amount">
+                            $0.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-card-icon">
+                        <i class='bx bx-loader'></i>
+                    </div>
+                    <div class="mini-card-details">
+                        <div class="mini-card-details-title">
+                            Pending
+                        </div>
+                        <div class="mini-card-details-amount">
+                            $0.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-card-icon">
+                        <i class='bx bx-briefcase-alt' ></i>
+                    </div>
+                    <div class="mini-card-details">
+                        <div class="mini-card-details-title">
+                            Referral Bonus
+                        </div>
+                        <div class="mini-card-details-amount">
+                            $0.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="col-1">
+            <!--Coupon-->
+            <div class="card">
+                <h2 class="card-salution">Coupon</h2>
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Enter Coupon Code" class="coupon-text" />
+                        </div>
+                        <div >
+                            <input type="submit" value="Enter Coupon" class="coupon-btn" />
+                        </div>
+                    </form>
+            </div>
+            <!--End Coupon-->
+            <!--Daily Task-->
+            <div class="card" id="dailyTask">
+                <h2 class="card-salution">Daily Task</h2>
+                    <div class="task-img">
+
+                    </div>
+                    <div class="btn-black">
+                        Start task
+                    </div>
+            </div>
+            <!--End Daily task-->
+            </div>
+            <div class="col-1">
+                <!--Refferal-->
+                
+                <div class="card">
+                    <h2 class="card-salution">Refferal Link</h2>
+                        <div class="referral">
+                            <input type="text" value="https://theman.com/signup?id=604e7e740ca56d596795315e" class="referral-link" id="reflink"><span onclick="copyRef()"class="referral-icon"><i class='bx bxs-copy'></i></span>
+                        </div>
+                </div>
+                <!--End refferal-->
+                <!--Transaction-->
+                <div class="card">
+                    <h2 class="card-salution">Transaction History</h2>
+                    <div class="table-row">
+                        <div class="transaction-title"><i class='bx bx-loader' style='color:#ff0000; margin-right: 10px'  ></i> Pending</div> <div class="transaction-amount">$40</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="transaction-title"><i class='bx bx-sort-alt-2' style='color:#04b422; margin-right: 10px'  ></i> Deposit</div> <div class="transaction-amount">$40</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="transaction-title"><i class='bx bx-sort-alt-2' style='color:#ff0000; margin-right: 10px'  ></i> Withdrawal</div> <div class="transaction-amount">$40</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="transaction-title"><i class='bx bx-sort-alt-2' style='color:#04b422; margin-right: 10px'  ></i> Deposit</div> <div class="transaction-amount">$40</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="transaction-title"><i class='bx bx-sort-alt-2' style='color:#04b422; margin-right: 10px'  ></i> Deposit</div> <div class="transaction-amount">$40</div>
+                    </div>
+                    <div style="text-align: center; font-size: 15px">
+                        <a href="#" >View More</a>
+                    </div>
+                </div>
+                <!--End Transaction-->
+            </div>
+            
+            
+        </div>
+    </div>
+    <!--foooter-->
+    <div class="footer">
+        <span>&copy; Name 2021</span>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

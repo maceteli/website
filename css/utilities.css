@@ -342,6 +342,9 @@ body{
     height: unset;
     padding: 30px 25px;
   }
+  .card{
+   margin-bottom: 20px; 
+  }
   .x-flex{
     
     flex-direction: column;

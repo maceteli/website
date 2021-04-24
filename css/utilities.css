@@ -348,6 +348,7 @@ body{
   .x-flex{
     
     flex-direction: column;
+    gap: 20px;
   }
   .footer{
     padding: 30px 25px;

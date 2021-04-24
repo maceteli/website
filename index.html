@@ -12,7 +12,9 @@
 <body>
     <!--Main Container-->
     <div class="main-container">
-        <!--navbar-->
+      
+        <div class="hero" id="home">
+              <!--navbar-->
         <div class="navbar">
             <div class="container flex">
                 <div class="top-nav">
@@ -23,56 +25,56 @@
                     </div>
                     <div class="menu">
                         <!--user display-->
-                        <div class="user">
-                            <a href="#">Login</a>
+                        <div class="login">
+                            <a href="#" class="btn">Login</a>
                         </div>
-                        <span>
+                        <span class="menu-icon" id="menu-icon" onclick="toggleMenu()">
                             <!--menu logo-->
+                            <i class='bx bx-menu-alt-right ' style='color:#fff'  ></i>
                         </span>
                     </div>
     
                 </div>
-                <div class="bottom-nav">
+                <div class="bottom-nav" id="menu">
                     <ul>
                         <li>
-                            <a href="dashboard.html">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="invest.html" id="myBtn" >About</a>
+                            <a href="#about" id="myBtn" >About</a>
                         </li>
                         <li>
-                            <a href="#">Plans</a>
+                            <a href="#howto">How To</a>
                         </li>
                         <li>
-                            <a href="#">FAQs</a>
+                            <a href="#plans">Plans</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="hero">
-            <h2>
-                Welcome to ISTACKFX
-            </h2>
-            <p>
-             Invest in forex and get your returns within 10 days
-            </p>
-            <a href="#">Get Started</a>
+            <div class="hero-content">
+                <h2>
+                    Welcome to iSTACK-FX
+                </h2>
+                <p>
+                Invest in forex and get your returns within 10 days
+                </p>
+                <div class="hero-btn-area">
+                    <a href="#howt" class="hero-btn">Get Started</a>
+                </div>
+            </div>
         </div>
         <!--content-->
         <div class="y-grid-1">
             <!--about Section-->
-            <div class="y-grid-2 about">
+            <div class="y-grid-2 about" id="about">
                 <!--Section one left-->
                 <div class="about-left">
                     <h2>
                         Who are we?
                     </h2>
                     <p>
-                        Returns Market Multi-Purpose Cooperative Society Limited is a cooperative body duly 
-                        registered under the Ministry of Commerce and Industries to operate as a Cooperative with Members of like minds.
-                        <br>
-                        <br>
                         Our Cooperative Society ensures that its members’
                         financial interest is well protected 
                         and efficiently managed by investing in 
@@ -87,11 +89,11 @@
                 </div>
                 <!--Section two right-->
                 <div class="about-right">
-                    <img src="#" alt="" class="grid-img">
+                    <img src="https://bgfxtrading.com/wp-content/uploads/2020/12/forexbanner2.jpg" alt="" class="grid-img">
                 </div>
             </div>
             <!--How it works-->
-            <div class="y-grid-1 help">
+            <div class="y-grid-1 help" id="howto">
                 <h2> How it works ?</h2>
 
                 <div class="help-body">
@@ -136,7 +138,7 @@
             <div class="y-grid-2 member">
                 <div class="member-left">
                     <div>Secure Your Future Today!</div>
-                    <div>Get 10% consistent dividends on your total shares capital.</div>
+                    <div>Get 45% consistent dividends on your total capital.</div>
                 </div>
                 <div class="member-right">
                 
@@ -145,126 +147,138 @@
                 </div>
             </div>
             <!--Plans-->
-            <div class="y-grid-1 plans">
+            <div class="y-grid-1 plans" id="plans">
                 <h2>Investment Plans</h2>
                 <div class="x-flex plans-body">
-                    
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 1
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358;  5,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;7,250</span>
+                                <span>bonus: &#8358;1,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                   
+                    </div>
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 2
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 10,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;14,500</span>
+                                <span>bonus: &#8358;2,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                  
+                    </div>
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 3
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 20,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;29,000</span>
+                                <span>bonus: &#8358;5,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                  
+                    </div>
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 4
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 50,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;72,500</span>
+                                <span>bonus: &#8358;12,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                    
+                    </div>
                 </div>
                 
                 <div class="x-flex plans-body" id="more-content">
-                    
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 5
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 100,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;145,000</span>
+                                <span>bonus: &#8358;25,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                   
+                    </div>
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 6
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 200,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;300,00</span>
+                                <span>bonus: &#8358;45,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                    
+                    </div>
+                    <div>
                         <div class="card">
                             <div class="plan-title">
-                                Silver Plan
+                                Plan 7
                             </div>
                             <div class="plan-prize">
-                                300,000
+                                &#8358; 500,000
                             </div>
                             <div class="plan-descriptions">
-                                <span>3 months</span>
-                                <span>10% Dividend</span>
+                                <span>duration: 10 days</span>
+                                <span>ROI: &#8358;725,000</span>
+                                <span>bonus: &#8358;100,000</span>
                             </div>
                             <div class="btn-area">
-                                <a href="#" class="plan-btn">Become a Member</a>
+                                <a href="#" class="plan-btn"><i class='bx bx-cart-alt' style='color:#ffffff ; margin-right: 10px;'  ></i>Buy Coupon</a>
                             </div>
                         </div>
-                   
+                    </div>
                 </div>
 
                 <div class="x-flex" id="more-container">
@@ -277,7 +291,7 @@
         <!--Footer-->
         <div class="footer">
             <div class="footer-section">
-                <span class="footer-header">Returns Market</span>
+                <span class="footer-header">iStacks-FX</span>
                 <span class="footer-paragraph">
                     We are known to manage members’ relationships 
                     excellently while offering top-notch services.
@@ -297,12 +311,13 @@
             </div>
             <div class="footer-section">
                 <span class="footer-header">Lets Connect</span>
-                    <a href="#" class="footer-link">facebook</a>
-                    <a href="#" class="footer-link">Twitter</a>
-                    <a href="#" class="footer-link">Instagram</a>
+                    <a href="#" class="footer-link"><i class='bx bxl-facebook-square' style='color:#ffffff; margin-right: 10px; font-size: 15px' ></i>facebook</a>
+                    <a href="#" class="footer-link"><i class='bx bxl-twitter' style='color:#ffffff; margin-right: 10px; font-size: 15px' ></i>Twitter</a>
+                    <a href="#" class="footer-link"><i class='bx bxl-instagram' style='color:#ffffff; margin-right: 10px; font-size: 15px' ></i>Instagram</a>
             </div>
         </div>
     </div>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

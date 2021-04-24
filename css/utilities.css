@@ -3,9 +3,10 @@
   --white: #fff;
   --black: #000;
   --red: #ee280e;
+  --red-hover: #721307;
   --blue: rgb(17, 7, 73);
-  --action: #27863d;
-  --action-hover: #34bd54;
+  --action:  #34bd54;
+  --action-hover: #1a5e2a;
   --figures: #a05a25;
 }
 body{
@@ -40,22 +41,65 @@ body{
 .grid-img{
   width: 500px;
   height: 350px;
-  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.menu-icon{
+  font-size: 35px;
+  display: none;
+}
+.login{
+  display:flex;
+  gap: 10px
+}
+.login .btn{
+  color: var(--white);
 }
 /** Hero **/
 .hero{
   display:flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
-  height: 60vh;
+  height: 100vh;
   text-align: center;
- 
+  background-image:  linear-gradient(to bottom, rgba(17, 17, 17, 0.829), rgba(17, 7, 73, 0.932)), url('https://bgfxtrading.com/wp-content/uploads/2020/12/forexbanner2.jpg');
+  background-position: center;
 }
+.hero h2{
+  font-size: 40px;
+  color: var(--white);
+  
+}
+.hero p{
+  font-size: 15px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+.hero-content{
+  padding-top: 150px;
+  justify-content: center;
+}
+.hero-btn-area{
+  display: flex;
+  justify-content: center;
+}
+.hero-btn {
+  display: block;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.hero-btn:hover{
+  background-color: var(--red-hover);
+}
+
 /** about **/
 .about{
   padding: 30px 100px;
   height: 100vh;
+  gap: 50px;
 }
 
 .about-left{
@@ -84,7 +128,9 @@ body{
   padding: 10px 40px;
   border-radius: 5px;
 }
-
+.about-btn:hover{
+  background-color: var(--action-hover);
+}
 .about-btn a{
   color: var(--white);
 }
@@ -146,7 +192,9 @@ body{
   padding: 10px 40px;
   border-radius: 5px;
 }
-
+.member-btn:hover{
+  background-color: var(--action-hover);
+}
 .member-btn a{
   color: var(--white);
 }
@@ -206,7 +254,9 @@ body{
   border-radius: 5px;
   margin-top: 30px;
 }
-
+.plan-btn:hover{
+  background-color: var(--action-hover);
+}
 .plan-btn a{
   color: var(--white);
 }
@@ -244,6 +294,39 @@ body{
 
 /** Tablet **/
 @media(max-width:768px){
+  .menu-icon{
+    font-size: 35px;
+    display: flex;
+  }
+  .bottom-nav{
+    background-color: var(--container-color);
+    color: var(--text-color);
+    width:100%;
+    padding:20px 50px;
+    z-index: 100;
+    height: 100vh;
+}
+.bottom-nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-content: center;
+    
+}   
+.bottom-nav li{
+    margin-right: 50px;
+   
+    padding-left: 20px;
+}
+.bottom-nav li:first-child{
+    border-left: none;
+}
+.bottom-nav a{
+    font-size:15px;
+    font-weight: bold;
+}
 .hero{
   height: 80vh;
 }
@@ -253,8 +336,8 @@ body{
 }
 .grid-img{
   width: 100%;
-  height: 350px;
-  border: 1px solid #000;
+  height: 300px;
+  border-radius: 5px;
 }
 .y-grid-2{
   display: grid;
@@ -267,6 +350,10 @@ body{
   align-content: center;
   
 }
+.about-left h2{
+  text-align: center;
+ }
+ 
 .help{
   padding: 30px 50px;
 }
@@ -276,6 +363,7 @@ body{
 .help-body{
   display:flex;
   flex-direction: column;
+  gap: 30px;
 }
 .member{
   padding: 30px 50px;
@@ -299,15 +387,28 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 }
 
 @media(max-width: 500px){
+  .menu-icon{
+    font-size: 35px;
+    display: flex;
+  }
+  .grid-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+  }
   .hero{
     height: 80vh;
   }
   .about{
     height: unset;
     padding: 30px 25px;
+  }
+  .about-left h2{
+   text-align: center;
   }
   .y-grid-2{
     display: grid;
@@ -329,6 +430,7 @@ body{
   .help-body{
     display:flex;
     flex-direction: column;
+    gap: 30px;
   }
   .member{
     padding: 30px 25px;
@@ -342,13 +444,14 @@ body{
     height: unset;
     padding: 30px 25px;
   }
-  .plans-body .card{
-   margin-bottom: 20px; 
+ 
+  .card{
+    margin-bottom: 20px;
   }
   .x-flex{
     
     flex-direction: column;
-  
+    column-gap: 20px;
   }
   .footer{
     padding: 30px 25px;

@@ -48,11 +48,22 @@ function copyRef() {
     var more_content = document.getElementById("more-content");
 
     if(more_content.style.display=="none"){
-      more_content.style.display="block";
-     
+      more_content.style.display="flex";
+      button.innerHTML = "View Less";
     }else{
       
       more_content.style.display="none";
+      button.innerHTML = "View More";
     }
 
+  }
+
+  function toggleMenu(){
+    var button = document.getElementById('menu-icon');
+    var menu = document.getElementById('menu');
+    if(menu.style.display == "none"){
+      menu.style.display="flex";
+    }else{
+      menu.style.display="none";
+    }
   }

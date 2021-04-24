@@ -391,6 +391,11 @@ body{
 }
 
 @media(max-width: 500px){
+  .hero h2{
+    font-size: 35px;
+    color: var(--white);
+    
+  }
   .menu-icon{
     font-size: 35px;
     display: flex;
